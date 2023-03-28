@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Deogiri College Aurangabad, Maharashtra</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+
+        }
+
+        .diemsimg {
+            height: 80vh;
+            width: 100vw;
+        }
+
+
+
+        @media only screen and (max-width: 600px) {
+            .diemsimg {
+                overflow: auto;
+                height: 60vh;
+                width: 100%;
+            }
+
+        }
+
+
+        .aboutinfo {
+            font-size: 20px;
+        }
+
+
+
+        .rounded {
+            width: 80%;
+
+        }
+
+        .gallary div img {
+            height: 18rem;
+        }
+
+        .gallary {
+            align-items: center;
+            width: 96%;
+            margin-left: 10px;
+
+        }
+
+        .text-reset {
+            text-decoration: none;
+        }
+
+        .text-reset:hover {
+            text-decoration: underline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid position-relative">
+            <img style="margin-right: 10px;" src="https://mspmandal.in/img/msp-min.png" height="60px" width="75px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="font-size: 18px;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mspmandal.in/">About MSP</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="textbox" itemid="Searchinp" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-primary" id="Searchbtn" type="text">Search</button>
+
+                </form>
+
+                <!-- Sign Up modal -->
+                <br>
+                <button type="button" class="btn btn-primary up mx-2" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">
+                    Sign Up
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signupModalLabel">Create a new account</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="md-3">
+                                        <label for="validationCustom01" class="form-label"> Full Name</label>
+                                        <input type="text" class="form-control" id="validationCustom01" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cexampleInputPassword1" class="form-label"> Confirm Password</label>
+                                        <input type="cpassword" class="form-control" id="cexampleInputPassword1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign In modal -->
+                <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#signinModal">
+                    Sign In
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signinModalLabel">Sign In your account</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- https://source.unsplash.com/WLUHO9A_xik/1600x900 -->
+
+                <img src="./cbg3.jpg" class="diemsimg img1 d-block w-100" alt="Img">
+                <div style="color: black;" class="carousel-caption d-none d-md-block">
+                    <h2 class="imgheading">Welcome to Deogiri campus </h2>
+                    <p class="imgheading">The roots of education are bitter but the fruit is sweet.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./cbg1.jpg" class="diemsimg d-block w-100" alt="Img">
+                <div style="color: black;" class="carousel-caption d-none d-md-block">
+                    <h2 class="imgheading">Welcome to Deogiri campus</h2>
+                    <p class="imgheading">The roots of education are bitter but the fruit is sweet.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./cbg3.jpg" class=" diemsimg d-block w-100" alt="Img">
+                <div style="color: black;" class="carousel-caption d-none d-md-block">
+                    <h2 class="imgheading">Welcome to Deogiri campus</h2>
+                    <p class="imgheading">The roots of education are bitter but the fruit is sweet.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h2><img data-aspectratio="200/150"
+                src="https://www.dietms.org/wp-content/uploads/2021/08/NAAC-A-grade-logo_200x150.jpg"
+                class="size-full wp-image-7531 aligncenter ls-is-cached lazyloaded"
+                data-src="https://www.dietms.org/wp-content/uploads/2021/08/NAAC-A-grade-logo_200x150.jpg" alt=""
+                width="200" height="150"><noscript><img class="size-full wp-image-7531 aligncenter"
+                    src="https://www.dietms.org/wp-content/uploads/2021/08/NAAC-A-grade-logo_200x150.jpg" alt=""
+                    width="200" height="150" /></noscript></h2>
+        <h1 style="text-align: center;">Deogiri College Aurangabad, Maharashtra</h1>
+        <h4 style="text-align: center;">Founded in 2009-10</h4>
+        <p style="font-size: 25px;"> Deogiri College, Aurangabad, is an undergraduate and postgraduate, coeducational
+            college
+            along with Research center in many disciplines,<br> situated in Aurangabad, Maharashtra. </p>
+        <div class="col-lg-8 mx-auto">
+            <p class="aboutinfo">In pursuance with the policies of the Government of India to start Engineering colleges
+                in emerging
+                technologies, <strong> Deogiri Institute of Engineering and Management Studies </strong> is established
+                at Aurangabad
+                during the academic year 2009-10.
+
+                Deogiri Institute of Engineering and Management Studies is affiliated to the <a
+                    href="https://dbatu.ac.in/"> Dr. Babasaheb Ambedkar
+                    Technological University </a>, Lonere and is developed as per the norms of the All India Council of
+                Technical
+                Education (A.I.C.T.E.), Government of India.The Institute is consistently among the top institutes of
+                Dr. B.A.M. University in examination results. The student-centric teaching learning environment, state
+                of the art infrastructure, well-equipped laboratories, library stacked with good number of books,
+                experienced and dedicated team of faculties are the key features of the Institute.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-secondary btn-lg px-4 gap-3"><a
+                        style="color: white; text-decoration:none;" href="https://www.dietms.org/"> More...</a></button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div
+        class="text-center h-100 p-5 text-white bg-dark rounded-3 text-center position-relative overflow-hidden  p-md-5 m-md-3">
+        <h2>Our Mission</h2>
+        <p class="card-text mb-auto" style="user-select: auto;">
+
+            1) To develop the students for best academic and industrial practices by implementing
+            innovative teaching learning methodologies, promoting all round development by giving
+            exposure to series of activities. <br><br>
+
+            2) To prepare the students to face global challenges by equipping them with requisite
+            technical expertise and developing entrepreneurship skills among them. <br><br>
+
+            3) To promote research attitude among faculty and students.
+
+        </p><br>
+        <h2>Our Vision</h2>
+        <p class="card-text mb-auto" style="user-select: auto;">
+
+            1) Nation building by creating opportunities for rural and urban students through excellence in education
+            and research in the field of Engineering and Management.
+
+        </p>
+    </div>
+    <br><br>
+    <div class="text-center">
+        <h2>Skill Development Partnerships</h2><br>
+        <img src="./partnership.png" class="rounded" alt="...">
+    </div>
+
+    <hr>
+
+    <hr>
+    <div value="hostel" id="hostel" name="hostel" style="background: #43C6AC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        " class="px-4 py-5 my-5 text-center position-relative overflow-hidden p-3 p-md-5 m-md-3">
+        <div style="color: white;">
+            <h1 class="display-5 fw-bold">Deogiri College, Aurangabad - Hostel</h1><br>
+            <h3>Deogiri College Hostel For Boys</h3>
+            <p>Each student will have to pay refundable Rs. 1000 as deposit other than the prescribed fees.
+            </p>
+            <P style="color: white;">Fees: ₹12 k - ₹ 16 k</P>
+
+            <a href="https://www.google.com/maps/dir/Deogiri+Institute+of+Engineering+and+Management+Studies,Aurangabad,+Rachanakar+Colony,+New+Usmanpura,+Aurangabad,+Maharashtra/V88C%2BCW2+Deogiri+Boys+Hostel,+Rachanakar+Colony,+Aurangabad,+Maharashtra/@19.8655022,75.3192226,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3bdb9860cbffffff:0xa66e2b579fb7570!2m2!1d75.321184!2d19.863738!1m5!1m1!1s0x3bdb993cda6d3a93:0x6a28181bfe550a61!2m2!1d75.3222684!2d19.8660089"
+                class="btn btn-info" role="button">Location</a>
+            <a href="https://deogiricollege.org/department/science/physics-department/facilities-2/hostel/"
+                class="btn btn-info" role="button">Hostel Admission</a><br><br>
+            <h3>Deogiri College Hostel For Girls</h3>
+            <p>Each student will have to pay refundable Rs. 1000 as a deposit other than the prescribed fees.
+            </p>
+            <P style="color: white;">Fees: ₹15 k - ₹ 30 k</P>
+            <div class="col-lg-6 mx-auto">
+
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+                    <a href="https://www.google.com/maps/dir/Deogiri+Institute+of+Engineering+and+Management+Studies,Aurangabad,+Rachanakar+Colony,+New+Usmanpura,+Aurangabad,+Maharashtra/V87C%2BRF8+D.I.E.M.S+Girls+Hostel,+Unnamed+Road,+Rachanakar+Colony,+New+Usmanpura,+Aurangabad,+Maharashtra+431005/@19.864169,75.3186957,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3bdb9860cbffffff:0xa66e2b579fb7570!2m2!1d75.321184!2d19.863738!1m5!1m1!1s0x3bdb992c2447fc49:0xb86176079608e55c!2m2!1d75.3212241!2d19.8645473"
+                        class="btn btn-info" role="button">Location</a>
+                    <a href="https://deogiricollege.org/department/science/physics-department/facilities-2/hostel/"
+                        class="btn btn-info" role="button">Hostel Admission</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+
+
+
+
+    <!-- Gallery -->
+
+    <div class="gallary row text-center position-relative overflow-hidden p-3 p-md-5 m-md-3">
+        <h2 class="mb-4">College Gallery</h2>
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img src="./diems1.jpg" class="w-100 shadow-1-strong gallaryimg1 rounded mb-4" alt="" />
+
+            <img src="./diems4.jpg" class="w-100 shadow-1-strong gallaryimg rounded mb-4" alt="" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="./deogiri.jpg" class="w-100 shadow-1-strong gallaryimg1 rounded mb-4" alt="" />
+
+            <img src="./deogiri4.jpg" class="w-100 shadow-1-strong gallaryimg rounded mb-4" alt="" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="./deogiri1.jpg" class="w-100 shadow-1-strong gallaryimg1 rounded mb-4" alt="" />
+
+            <img src="./deogiri2.jpg" class="w-100 shadow-1-strong gallaryimg rounded mb-4" alt="" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="./deogiri3.jpg" class="w-100 shadow-1-strong gallaryimg rounded mb-4" alt="" />
+
+
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+
+            <img src="./diems5.jpg" class="w-100 shadow-1-strong gallaryimg rounded mb-4" alt="" />
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+
+            <img src="./deogiri5.jpg" class="w-100 shadow-1-strong gallaryimg rounded mb-4" alt="" />
+        </div>
+
+        <button onclick="gallaryfunc()" class="showgallary btn btn-info">Show Gallary</button>
+
+
+
+    </div>
+    <!-- Gallery -->
+
+
+
+
+    <hr>
+    <hr>
+
+
+
+
+
+
+    <div style="background-color:#43C6AC; background: #43C6AC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        ;" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div style="color: white;" class="col-md-6 p-lg-1 mx-auto my-5">
+            <h1 class="display-4 fw-normal">Deogiri College, Aurangabad</h1>
+            <p class="lead fw-normal">Deogiri College, Aurangabad, is an undergraduate and postgraduate,
+                coeducational
+                college along with Research center in many disciplines, situated in Aurangabad, Maharashtra. It was
+                established in the year 1960 by Marathwada Shikshan Prasarak Mandal The college is affiliated with
+                Dr. Babasaheb Ambedkar Marathwada University.
+
+            </p>
+
+
+
+        </div>
+
+
+        <div value="admission" class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Admission</h4>
+            </div>
+            <div class="card-body">
+
+                <div class="main_title">
+                    <h2><img data-aspectratio="200/150"
+                            src="https://www.dietms.org/wp-content/uploads/2021/08/NAAC-A-grade-logo_200x150.jpg"
+                            class="size-full wp-image-7531 aligncenter ls-is-cached lazyloaded"
+                            data-src="https://www.dietms.org/wp-content/uploads/2021/08/NAAC-A-grade-logo_200x150.jpg"
+                            alt="" width="200" height="150"><noscript><img class="size-full wp-image-7531 aligncenter"
+                                src="https://www.dietms.org/wp-content/uploads/2021/08/NAAC-A-grade-logo_200x150.jpg"
+                                alt="" width="200" height="150" /></noscript></h2>
+                    <h2 style="text-align: center;">Deogiri College Aurangabad, Maharashtra</h2>
+                    <h3 style="text-align: center;"><strong>Founded in 1960</strong></h3>
+                    <p>Deogiri College, Aurangabad, is an undergraduate and postgraduate, coeducational college
+                        along with Research center in many disciplines, situated in Aurangabad, Maharashtra</p>
+
+
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Engineering/MBA Admission Details</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>The Post-Graduation courses were introduced in 1999, around 36 PG courses are run
+                                under this program. Currently Deogiri college has engineering and management
+                                science departments as DIEMS has Director Dr. Ulhas Shiurkar as well as Biotech
+                                department. It was reaccredited 'A' with CGPA 3.75</p>
+                            <button onclick="window.location.href='https://www.dietms.org/'" type="button"
+                                class="w-100 btn btn-lg btn-primary">Admission Details</button>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">B.Sc/B.C.A and Other Admission Details</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Courses Offered By Deogiri College</h3>
+                            <h5 class="card-title pricing-card-title">B.Sc. Computer Science
+                            </h5>
+                            <h5 class="card-title pricing-card-title">B.C.A.(Science)</h5>
+                            <h5 class="card-title pricing-card-title">B.Sc. Information Technology (I.T.)</h5>
+                            <h5 class="card-title pricing-card-title">B.Sc. Biotechnology</h5>
+                            <h5 class="card-title pricing-card-title">B.Sc. Bioinformatics
+                            </h5>
+                            <button
+                                onclick="window.location.href='https://deogiricollege.org/department/science/physics-department/courses-2/b-sc-general/'"
+                                type="button" class="w-100 btn btn-lg btn-primary">Admission Details</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">B.Com/BBA/DBM Admission Details</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Courses Offered By Deogiri College</h3>
+                            <h5 class="card-title pricing-card-title">B.Com Graduate Course
+                            </h5>
+                            <h5 class="card-title pricing-card-title">B.Com Graduate Course</h5>
+                            <h5 class="card-title pricing-card-title">DBM Graduate Course</h5>
+
+                            <button
+                                onclick="window.location.href='https://deogiricollege.org/department/science/physics-department/courses-2/dbm/'"
+                                type="button" class="w-100 btn btn-lg btn-primary">Admission Details</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+
+    <hr>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div value="footer" class="container" style="user-select: auto;">
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>ABOUT COLLEGE
+                        </h6>
+                        <p>
+                            Deogiri College, Aurangabad, is an undergraduate and postgraduate, coeducational college
+                            along with Research center in many disciplines,
+                            situated in Aurangabad, Maharashtra.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            ALUMINI
+                        </h6>
+                        <p>
+                            <a href="https://dietms.almaconnect.com/" class="text-reset">Alumini Registration</a>
+                        </p>
+                        <p>
+                            <a href="https://www.dietms.org/student-verification/" class="text-reset">Student
+                                Verification</a>
+                        </p>
+                        <p>
+                            <a href="https://diems.truecopy.in/v2/files/submitdoctranscript.tc"
+                                class="text-reset">Transcript</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Important links
+                        </h6>
+                        <p>
+                            <a href="https://dbatu.ac.in/" class="text-reset">Dr.B.A.T, University</a>
+                        </p>
+                        <p>
+                            <a href="http://bamu.ac.in/" class="text-reset">Dr. B.A.M, University</a>
+                        </p>
+                        <p>
+                            <a href="https://swayam.gov.in/" class="text-reset">SWAYAM</a>
+                        </p>
+                        <p>
+                            <a href="https://ndl.iitkgp.ac.in/" class="text-reset">National Digital library of India</a>
+                        </p>
+                    </div>
+
+
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Address</h6>
+                        <p><i class="fas fa-home me-3"></i> Deogiri Institute of Engineering and Management Studies,
+                            Railway Station Road, Aurangabad – 431005.</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            Email – admin@dietms.org
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i>Info line – 0240-2367546</p>
+                        <p><i class="fas fa-print me-3"></i>Director – +91-9011078272</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+            style="user-select: auto;">
+            <div class="col-md-4 d-flex align-items-center" style="user-select: auto;">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" style="user-select: auto;">
+                    <svg class="bi" width="30" height="24" style="user-select: auto;">
+                        <use xlink:href="#bootstrap" style="user-select: auto;"></use>
+                    </svg>
+                </a>
+                <span class="text-muted" style="user-select: auto;">© 2022-2023 Pradip Dound, DIEMS</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="user-select: auto;">
+                <li class="ms-3" style="user-select: auto;"><a class="text-muted" href="https://github.com/PradipSD"
+                        style="user-select: auto;"><svg class="bi" width="24" height="24" style="user-select: auto;">
+                            <i class="bi bi-github"></i>
+                        </svg></a></li>
+                <li class="ms-3" style="user-select: auto;"><a class="text-muted"
+                        href="https://www.instagram.com/pradipdound_20/" style="user-select: auto;"><svg class="bi"
+                            width="24" height="24" style="user-select: auto;">
+                            <i class="bi bi-instagram"></i>
+                        </svg></a></li>
+                <li class="ms-3" style="user-select: auto;"><a class="text-muted"
+                        href="https://www.linkedin.com/in/pradip-dound-353538209/" style="user-select: auto;"><svg
+                            class="bi" width="24" height="24" style="user-select: auto;">
+                            <i class="bi bi-linkedin"></i>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Gallary Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".showgallary").click(function () {
+
+                $(".gallaryimg").slideToggle();
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>
